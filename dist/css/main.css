@@ -294,7 +294,7 @@ main {
 
 .btn, .btn-dark, .btn-light {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
