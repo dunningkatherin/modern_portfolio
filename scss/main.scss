@@ -134,6 +134,28 @@ main {
       @include easeOut;
     }
   }
+
+  .item-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px rgba(176, 176, 176, 0.2);
+
+    .item-skills,
+    .item-tools,
+    .item-more {
+      width: 100%;
+      border: 6px solid #f40e67;
+      border-image-source: linear-gradient(#f40e67, #fccd11);
+      border-image-slice: 20;
+      padding: 1rem 2.5rem;
+    }
+  }
 }
 
 // Contact Page -- Normally I would stick with Grid, but showing a mix of different technologies.
