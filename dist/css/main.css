@@ -249,18 +249,48 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
+    font-size: 1.2rem;
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    align-items: center;
+    align-content: center;
+    border: 6px solid #f40e67;
+    border-image-source: linear-gradient(#f40e67, #fccd11);
+    border-image-slice: 20; }
 
-.projects {
+.work-info {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 30px;
+  grid-template-areas: 'jobskills jobtools jobmore' 'jobitem1 jobitem2 jobitem3' 'jobitem4 . . ';
   grid-template-columns: repeat(3, 1fr); }
-  .projects img {
+  .work-info .job-skills {
+    grid-area: jobskills; }
+  .work-info .job-tools {
+    grid-area: jobtools; }
+  .work-info .job-more {
+    grid-area: jobmore; }
+  .work-info .job-item-1 {
+    grid-area: jobitem1; }
+  .work-info .job-item-2 {
+    grid-area: jobitem2; }
+  .work-info .job-item-3 {
+    grid-area: jobitem3; }
+  .work-info .job-item-4 {
+    grid-area: jobitem4; }
+  .work-info .job {
+    font-size: 1.2rem;
+    background: #515151;
+    width: 100%;
+    padding: 0.5rem;
+    align-items: center;
+    align-content: center;
+    border: 6px solid #f40e67;
+    border-image-source: linear-gradient(#f40e67, #fccd11);
+    border-image-slice: 20; }
+  .work-info img {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img:hover {
+    .work-info img:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out;
@@ -268,25 +298,26 @@ main {
       -moz-transition: all 0.5s ease-out;
       -ms-transition: all 0.5s ease-out;
       -o-transition: all 0.5s ease-out; }
-  .projects .item-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+
+/*.projects {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 0.7fr);
+
+  .item-box {
+    width: 100%;
     align-items: center;
-    margin-top: 1rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    position: relative;
-    box-shadow: 0px 0px 20px 0px rgba(176, 176, 176, 0.2); }
-    .projects .item-box .item-skills,
-    .projects .item-box .item-tools,
-    .projects .item-box .item-more {
-      width: 100%;
+
+    .item-skills,
+    .item-tools,
+    .item-more {
+      align-content: center;
       border: 6px solid #f40e67;
       border-image-source: linear-gradient(#f40e67, #fccd11);
       border-image-slice: 20;
-      padding: 1rem 2.5rem; }
-
+      padding: 1rem 2.5rem;
+    }
+  }*/
 .boxes {
   display: flex;
   flex-wrap: wrap;

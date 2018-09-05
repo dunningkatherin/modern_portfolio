@@ -112,17 +112,66 @@ main {
   }
 
   .job {
+    font-size: 1.2rem;
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    align-items: center;
+    align-content: center;
+    border: 6px solid #f40e67;
+    border-image-source: linear-gradient(#f40e67, #fccd11);
+    border-image-slice: 20;
   }
 }
 
 // Work/Projects
-.projects {
+.work-info {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 30px;
+  grid-template-areas:
+    'jobskills jobtools jobmore'
+    'jobitem1 jobitem2 jobitem3'
+    'jobitem4 . . ';
   grid-template-columns: repeat(3, 1fr);
+
+  .job-skills {
+    grid-area: jobskills
+  }
+
+  .job-tools {
+    grid-area: jobtools
+  }
+
+  .job-more {
+    grid-area: jobmore
+  }
+
+  .job-item-1 {
+    grid-area: jobitem1
+  }
+
+  .job-item-2 {
+    grid-area: jobitem2
+  }
+
+  .job-item-3 {
+    grid-area: jobitem3
+  }
+
+  .job-item-4 {
+    grid-area: jobitem4
+  }
+
+  .job {
+    font-size: 1.2rem;
+    background: lighten($primary-color, 5);
+    width: 100%;
+    padding: 0.5rem;
+    align-items: center;
+    align-content: center;
+    border: 6px solid #f40e67;
+    border-image-source: linear-gradient(#f40e67, #fccd11);
+    border-image-slice: 20;
+  }
 
   img {
     width: 100%;
@@ -134,30 +183,27 @@ main {
       @include easeOut;
     }
   }
+}
+
+/*.projects {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 0.7fr);
 
   .item-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
     align-items: center;
-    margin-top: 1rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    position: relative;
-    box-shadow: 0px 0px 20px 0px rgba(176, 176, 176, 0.2);
 
     .item-skills,
     .item-tools,
     .item-more {
-      width: 100%;
+      align-content: center;
       border: 6px solid #f40e67;
       border-image-source: linear-gradient(#f40e67, #fccd11);
       border-image-slice: 20;
       padding: 1rem 2.5rem;
     }
-  }
-}
-
+  }*/
 // Contact Page -- Normally I would stick with Grid, but showing a mix of different technologies.
 .boxes {
   display: flex;
