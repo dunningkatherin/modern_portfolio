@@ -7,8 +7,33 @@
 
 // Desktops & Laptops
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
+  .about-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+    grid-template-columns: 1fr;
+    text-align: left;
+
+    .job {
+      font-size: 1.5rem;
+
+      h5 {
+        -webkit-margin-before: 0.5rem;
+        -webkit-margin-after: 0.3rem;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+      }
+
+      ul {
+        -webkit-margin-before: 0.7rem;
+        -webkit-margin-after: 0.7rem;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+      }
+    }
   }
 }
 
@@ -72,10 +97,42 @@
       'job2'
       'job3';
     grid-template-columns: 1fr;
+    text-align: left;
+
+    .job {
+      font-size: 1.5rem;
+
+      h5 {
+        -webkit-margin-before: 0.5rem;
+        -webkit-margin-after: 0.3rem;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+      }
+
+      ul {
+        -webkit-margin-before: 0.7rem;
+        -webkit-margin-after: 0.7rem;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+      }
+    }
   }
 
-  .projects {
+  .work-info {
+    grid-template-areas:
+      'jobskills jobtools'
+      'jobmore jobitem1'
+      'jobitem2 jobitem3'
+      'jobitem4  .';
     grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+
+    .job-skills,
+    .job-tools,
+    .job-more {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
   }
 }
 
@@ -85,7 +142,37 @@
     margin-top: 10vh;
   }
 
-  .projects {
+  .about-info {
+    text-align: left;
+  }
+
+  .job {
+    font-size: .91rem;
+
+    h5 {
+      -webkit-margin-before: 0.5rem;
+      -webkit-margin-after: 0.5rem;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+    }
+
+    ul {
+      -webkit-margin-before: 0.7rem;
+      -webkit-margin-after: 0.7rem;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+    }
+  }
+
+  .work-info {
+    grid-template-areas:
+      'jobskills'
+      'jobtools'
+      'jobmore'
+      'jobitem1'
+      'jobitem2'
+      'jobitem3'
+      'jobitem4';
     grid-template-columns: 1fr;
   }
 }
