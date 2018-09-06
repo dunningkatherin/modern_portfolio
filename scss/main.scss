@@ -115,8 +115,6 @@ main {
     font-size: 1.2rem;
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    align-items: center;
-    align-content: center;
     border: 6px solid #f40e67;
     border-image-source: linear-gradient(#f40e67, #fccd11);
     border-image-slice: 20;
@@ -166,8 +164,6 @@ main {
     background: lighten($primary-color, 5);
     width: 100%;
     padding: 0.5rem;
-    align-items: center;
-    align-content: center;
     border: 6px solid #f40e67;
     border-image-source: linear-gradient(#f40e67, #fccd11);
     border-image-slice: 20;
